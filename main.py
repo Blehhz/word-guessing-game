@@ -3,7 +3,6 @@ import time
 import os
 
 def load_words(filename):
-    """Load words and categories from file."""
     categories = {}
     with open(filename, "r") as f:
         for line in f:
@@ -22,7 +21,6 @@ def choose_difficulty():
         print("Invalid choice. Try again.")
 
 def give_hint(word, guessed):
-    """Reveal one hidden letter as a hint."""
     hidden_indices = [i for i, l in enumerate(guessed) if l == "_"]
     if hidden_indices:
         idx = random.choice(hidden_indices)
@@ -41,7 +39,7 @@ def word_guessing_game():
     score = 0
 
     os.system('cls')
-    print("\n🎮 Welcome to the Advanced Word Guessing Game!")
+    print("🎮 Welcome to the Advanced Word Guessing Game!")
     time.sleep(4)
 
     while attempts > 0 and "_" in guessed:
