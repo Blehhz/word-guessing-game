@@ -1,0 +1,3 @@
+Animals: tiger, elephant, kangaroo, zebra, dolphin
+Countries: india, canada, brazil, germany, japan
+Technology: python, computer, internet, programming, keyboard
